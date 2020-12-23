@@ -75,11 +75,11 @@ test:
 #
 # You can use this database configuration with:
 #
-#   production:
-#     url: <%= ENV['DATABASE_URL'] %>
+  production:
+    url: <%= ENV['DATABASE_URL'] %>
 #
-production:
-  <<: *default
-  database: birthday_tracker_api_production
-  username: birthday_tracker_api
-  password: <%= ENV['BIRTHDAY_TRACKER_API_DATABASE_PASSWORD'] %>
+# production:
+#   <<: *default
+#   database: birthday_tracker_api_production
+#   username: birthday_tracker_api
+#   password: <%= ENV['BIRTHDAY_TRACKER_API_DATABASE_PASSWORD'] %>
