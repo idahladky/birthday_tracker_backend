@@ -4,6 +4,7 @@ class BirthdaysController < ApplicationController
 
   # GET /birthdays
   def index
+    puts params
     @birthdays = Birthday.where user: @user.id
 
     render json: @birthdays
